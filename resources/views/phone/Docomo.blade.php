@@ -10,6 +10,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function(){
+            $('#drawer_toggle').click(function() {
+                $(this).toggleClass("open");
+                $("#header").toggleClass("open");
+                $("#global_nav").toggleClass("open");
+                $("#global_nav").slideToggle();
+            });
+
+
             var req = new XMLHttpRequest();
             $('#save').on('click', function(){
                 $.ajaxSetup({
@@ -53,7 +61,7 @@
 
 <div class="out">
     <div class="inner">
-        <header>
+        <header id="header" class>
             <h1><a href="/HikakuPhone">比較Phone</a></h1>
             <h2>比較結果</h2>
             @if(isset($auths))
@@ -62,16 +70,22 @@
             
             @if(!isset($auths))
                 <div class="btn1">
-                    <form action="/HikakuPhone/register" method="get">
-                        <button type="submit" class="register">新規登録</button>
-                    </form>    
-                    <form action="/HikakuPhone/login" method="get">
-                        <button type="submit" class="login">ログイン</button>
-                    </form>    
+                    <div id="drawer_toggle" class>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav id="global_nav" class>
+                        <form action="/HikakuPhone/register" method="get">
+                            <button type="submit" class="register">新規登録</button>
+                        </form>   
+                        <form action="/HikakuPhone/login" method="get">
+                            <button type="submit" class="login">ログイン</button>
+                        </form>    
+                    </nav>
                 </div>
             @endif
         </header>
-
         <body>
             <div class="carrier">
                 <form action="/HikakuPhone/Docomo" method="post">

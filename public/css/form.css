@@ -373,13 +373,16 @@ header {
     border: solid 3px #000000;
 }
 
-header h1 {
-    flex-shrink: 0;
-}
+
 
 header a {
   text-decoration: none;
   color: white;
+  margin-right: 1rem;
+}
+
+header h1 {
+    flex-shrink: 0;
 }
 
 header h2 {
@@ -387,10 +390,6 @@ header h2 {
     margin: 0 auto;
 }
 
-header a {
-  font-size: 1.2rem;
-  margin-right: 1rem;
-}
 
 .common{
   background-color: #FFFFCC;
@@ -399,40 +398,6 @@ header a {
   line-height: 3rem;
 }
 
-.common span{
-  margin-left: 20%;
-  line-height: 3rem;
-  font-size: 1.5rem;
-  font-weight: lighter;
-}
-
-.common select{
-  line-height: 2rem;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  background-color: white;
-  border: 0.1rem solid #000;
-  width: 23rem;
-}
-
-#net {
-  margin-left: 6rem;
-}
-#card {
-  margin-left: 7.5rem;
-}
-#mem {
-  margin-left: 13.5rem;
-}
-
-
-.common input {
-  background-color: white;
-  border: 0.1rem solid #000;
-  line-height: 2rem;
-  float: right;
-  margin-right: 35%;
-}
 
 .common span, p{
     margin-left: 20%;
@@ -497,7 +462,7 @@ header a {
 
 .btn {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .btn button{
@@ -555,7 +520,22 @@ header a {
     margin-right: 0;
   }
 
-  .common span {
-    margin-left: 5%;
+  .common span, p {
+    margin-left: 0;
+  }
+
+  .one input, select {
+    margin-left: 7rem;
+  }
+
+  .btn{ 
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btn button {
+    width: 35%;
+    margin: 0.5rem;
   }
 }

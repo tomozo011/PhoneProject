@@ -10,6 +10,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function(){
+            $('#drawer_toggle').click(function() {
+                $(this).toggleClass("open");
+                $("#header").toggleClass("open");
+                $("#global_nav").toggleClass("open");
+                $("#global_nav").slideToggle();
+            });
+
             var req = new XMLHttpRequest();
             $('#save').on('click', function(){
                 $.ajaxSetup({
@@ -37,8 +44,13 @@
                     },
                 }).done(function (results) {
                     alert('保存しました。');
-                }).fail(function (err) {
-                    alert('ログインできていません。保存するためにはログインが必要です。');
+                }).fail(function (jpXHR) {
+                    if(jpXHR.status==404){
+                     alert('通信時にエラーが発生しました');
+                    }
+                    if(jpXHR.status==500){
+                        alert('ログインできていません。保存するためにはログインが必要です。');
+                    }
                 })
             });
         });
@@ -47,20 +59,27 @@
 
 <div class="out">
     <div class="inner">
-        <header>
+        <header id="header">
             <h1><a href="/HikakuPhone">比較Phone</a></h1>
             <h2>比較結果</h2>
             @if(isset($auths))
             <a href="/HikakuPhone/Mypage/low">{{$auths->name}}</a>
             @endif
             @if(!isset($auths))
-                <div class="btn1">
-                    <form action="/HikakuPhone/register" method="get">
-                        <button type="submit" class="register">新規登録</button>
-                    </form>    
-                    <form action="/HikakuPhone/login" method="get">
-                        <button type="submit" class="login">ログイン</button>
-                    </form>    
+            <div class="btn1">
+                    <div id="drawer_toggle" class>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav id="global_nav" class>
+                        <form action="/HikakuPhone/register" method="get">
+                            <button type="submit" class="register">新規登録</button>
+                        </form>   
+                        <form action="/HikakuPhone/login" method="get">
+                            <button type="submit" class="login">ログイン</button>
+                        </form>    
+                    </nav>
                 </div>
             @endif
         </header>
