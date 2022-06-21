@@ -43,7 +43,6 @@
                             name: @json($name),
                             user_id: @json($user_id),
                         } 
-                    // }),
                 }).done(function (results) {
                     alert('保存しました。');
                 }).fail(function (jpXHR) {
