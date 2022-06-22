@@ -113,7 +113,9 @@
             
             <div class="end">
                 <div class="btn">
-                    <button><a href="{{url('/HikakuPhone/form_common')}}">比較開始</a></button>
+                    <form action="/HikakuPhone/form_common" method="get">
+                        <button><a>比較開始</a></button>
+                    </form>
                 </div>
             <div>
         </body>
