@@ -395,6 +395,7 @@ margin: 0 auto;
 .btn1 {
   display: flex;
   float: right;
+  color: #000;
 }
 
 .btn1 button {
