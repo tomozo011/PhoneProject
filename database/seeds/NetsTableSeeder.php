@@ -22,7 +22,7 @@ class NetsTableSeeder extends Seeder
             ['carrier'=>'au', 'name' => 'au光/eo光','price' => 1100,'plan_id' =>201],
             ['carrier'=>'au', 'name' => 'au光/eo光','price' => 550,'plan_id' =>202],
             ['carrier'=>'au', 'name' => 'au光/eo光','price' => 550,'plan_id' =>202],
-            ['carrier'=>'au', 'name' => 'au光/eo光','price' => 550,'plan_id' =>20],
+            ['carrier'=>'au', 'name' => 'au光/eo光','price' => 550,'plan_id' =>202],
 
 // SB
             ['carrier'=>'ソフトバンク', 'name' => 'ソフトバンク光/ソフトバンクAir','price' => 1100,'plan_id' =>301],

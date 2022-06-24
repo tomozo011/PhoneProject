@@ -146,8 +146,6 @@ class DocomoController extends Controller
             
         }
 
-// dd($answers);
-
         foreach($GBs as $GB){
             $getGBs[] = $request->$GB;
         }
