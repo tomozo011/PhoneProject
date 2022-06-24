@@ -396,6 +396,7 @@ header h2 {
 }
 
 .btn1 button {
+  color: #000;
   margin: 0.5rem 0.5rem 0 0;
   padding: 0.5rem;
   border-bottom: 0.15rem solid #000;
@@ -407,10 +408,11 @@ header h2 {
 }
 
 .register {
-  background-color: #FFFFCC;
+  /* background-color: #FFFFCC; */
+  background-color: yellow;
 }
 .login {
-  background-color: #CCFFCC;
+  background-color: green;
 }
 
 .carrier {
@@ -618,6 +620,7 @@ header h2 {
     margin-left: 30rem;
   }
 
+
   #header.open h1, #header.open h2{
     display: none;
   }
@@ -691,7 +694,7 @@ header h2 {
       margin-top: 0.5rem;
     }
 
-  #header.open {
+  #header.open{
     box-sizing: border-box;
     position: fixed;
     width: 100%;

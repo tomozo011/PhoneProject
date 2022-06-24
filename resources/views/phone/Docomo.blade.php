@@ -66,7 +66,7 @@
             @if(isset($auths))
                 <a href="/HikakuPhone/Mypage/low">{{$auths->name}}</a>
             @endif
-            
+
             @if(!isset($auths))
                 <div class="btn1">
                     <div id="drawer_toggle" class>
