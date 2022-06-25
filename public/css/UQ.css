@@ -397,6 +397,7 @@ margin: 0 auto;
 }
 
 .btn1 button {
+  color: #000;
   margin: 0.5rem 0.5rem 0 0;
   padding: 0.5rem;
   border-bottom: 0.15rem solid #000;
@@ -556,7 +557,9 @@ margin: auto;
   }
 
   .carrier button {
-    width: 9rem;
+    background-color: #EEEEEE;
+    border: 0.08rem solid #000;
+    width: 7rem;
     margin: 1rem 0;
   }
 
@@ -610,8 +613,7 @@ margin: auto;
     position: fixed;
     width: 100%;
     height: calc(100%);
-    background: #CCCCCC;
-    opacity: 0.9;
+    background: rgba(86, 85, 85, 0.5);
     transform: translateX(0);
   }
 
@@ -695,8 +697,7 @@ margin: auto;
     position: fixed;
     width: 100%;
     height: calc(100%);
-    background: #CCCCCC;
-    opacity: 0.9;
+    background: rgba(86, 85, 85, 0.5);
     transform: translateX(0);
   }
 

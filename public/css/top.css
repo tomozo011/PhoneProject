@@ -796,8 +796,6 @@ th {
     width: 100%;
     height: calc(100%);
     background: rgba(86, 85, 85, 0.5);
-    /* background: #CCCCCC;
-    opacity: 0.9; */
   }
 
   header.open h1{
@@ -908,8 +906,8 @@ th {
     position: fixed;
     width: 100%;
     height: calc(100%);
-    background: #CCCCCC;
-    opacity: 0.9;
+    background: rgba(86, 85, 85, 0.5);
+    transform: translateX(0);
   }
 
   header.open h1{

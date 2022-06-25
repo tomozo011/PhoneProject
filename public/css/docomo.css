@@ -408,11 +408,11 @@ header h2 {
 }
 
 .register {
-  /* background-color: #FFFFCC; */
-  background-color: yellow;
+  background-color: #FFFFCC;
+
 }
 .login {
-  background-color: green;
+  background-color: #CCFFCC;
 }
 
 .carrier {
@@ -424,6 +424,8 @@ header h2 {
 }
 
 .carrier button {
+  background-color: #EEEEEE;
+  border: 0.08rem solid #000;
   width: 7rem;
   height: 3rem;
 }
@@ -610,8 +612,7 @@ header h2 {
     position: fixed;
     width: 100%;
     height: calc(100%);
-    background: #CCCCCC;
-    opacity: 0.9;
+    background: rgba(86, 85, 85, 0.5);
     transform: translateX(0);
   }
 
@@ -699,8 +700,7 @@ header h2 {
     position: fixed;
     width: 100%;
     height: calc(100%);
-    background: #CCCCCC;
-    opacity: 0.9;
+    background: rgba(86, 85, 85, 0.5);
     transform: translateX(0);
   }
 

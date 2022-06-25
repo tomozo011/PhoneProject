@@ -426,8 +426,10 @@ margin: 0 auto;
 }
 
 .carrier button {
-width: 7rem;
-height: 3rem;
+  background-color: #EEEEEE;
+  border: 0.08rem solid #000;
+  width: 7rem;
+  height: 3rem;
 }
 
 #fifth{
@@ -613,8 +615,7 @@ margin: auto;
     position: fixed;
     width: 100%;
     height: calc(100%);
-    background: #CCCCCC;
-    opacity: 0.9;
+    background: rgba(86, 85, 85, 0.5);
     transform: translateX(0);
   }
 
