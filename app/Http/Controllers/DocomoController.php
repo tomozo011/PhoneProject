@@ -103,7 +103,7 @@ class DocomoController extends Controller
             }elseif($request->net == $Net2->name && $Plans[$count]->plan_id == $Net2->plan_id){
                 $Nets_price[] = $Net2->price;
             }else{
-                $Netss_price[] = 0;
+                $Nets_price[] = 0;
             }
 
             // 学割
@@ -118,7 +118,7 @@ class DocomoController extends Controller
             // 合計
             foreach($Plans as $Plan){
                 if(isset($Plan)){
-                        $Total1 = $Plan->price + $Tells_price[$count] - $Member_price - $Cards_price[$count] - $Nets_price[$count] - $Students_price[$count];
+                    $Total1 = $Plan->price + $Tells_price[$count] - $Member_price - $Cards_price[$count] - $Nets_price[$count] - $Students_price[$count];
                 }
             }
 
