@@ -83,24 +83,27 @@ class DocomoController extends Controller
              
             // カード
             $Cards = Card::where('plan_id', 101)->first();
-            if($request->card === $Cards->name && $Plans[$count]->plan_id === $Cards->plan_id){
+            if($request->card === $Cards->name){
                 $Cards_price[] = $Cards->price;
-            }elseif(isset($Cards_price) && $request->card === $Cards->name && $Plans[$count]->plan_id === $Cards->plan_id) {
-                array_push($Cards_price, $Cards->price);
-            }else{
-                $Cards_price[] = 0;
             }
-           
+            // elseif(isset($Cards_price) && $request->card === $Cards->name && $Plans[$count]->plan_id === $Cards->plan_id) {
+            //     array_push($Cards_price, $Cards->price);
+            // }
+            // else{
+            //     $Cards_price[] = 0;
+            // }
 
             // ネット 
             $Net1 = Net::where('plan_id','101')->first();
             $Net2 = Net::where('plan_id', '102')->first();
             if($request->net == $Net1->name && $Plans[$count]->plan_id == $Net1->plan_id){
                 $Nets_price[] = $Net1->price;
+            }elseif($Plans[$count]->id == 2){
+                $Nets_price[] = 0;
             }elseif($request->net == $Net2->name && $Plans[$count]->plan_id == $Net2->plan_id){
                 $Nets_price[] = $Net2->price;
             }else{
-                $Nets_price[] = 0;
+                $Netss_price[] = 0;
             }
 
             // 学割
@@ -115,9 +118,10 @@ class DocomoController extends Controller
             // 合計
             foreach($Plans as $Plan){
                 if(isset($Plan)){
-                    $Total1 = $Plan->price + $Tells_price[$count] - $Member_price - $Cards_price[$count] - $Nets_price[$count] - $Students_price[$count];
+                        $Total1 = $Plan->price + $Tells_price[$count] - $Member_price - $Cards_price[$count] - $Nets_price[$count] - $Students_price[$count];
                 }
             }
+
 
             $Total2 = $Plans_free->price + $Tells_price[$count] - $Member_price - $Cards_price[$count] - $Nets_price[$count] - $Students_price[$count];
             

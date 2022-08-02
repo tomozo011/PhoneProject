@@ -64,7 +64,7 @@
             </div>
 
             <div class="pic">
-                <img src="/img/syokku.png">
+                <img src="/img/money.png">
             </div>
 
             <div class="ques3">
@@ -83,7 +83,7 @@
             </div>
             
             <div class="pic">
-                <img id="ans_img" src="/img/maru.png">
+                <img id="ans_img" src="/img/happy_guts.png">
             </div>
 
             <div class="ans">
@@ -108,7 +108,7 @@
                     <p><span>3.</span>料金が表示されます。</p>
                     <p>ページトップのボタンからキャリアを切り替えることができます。</p>
                     <span class="act">・表示される料金は、あくまで目安です。</span><br>
-                    <span class="act">・ahomo、povo、LINEMOには対応していません。</span>
+                    <span class="act">・ahomo、povo、LINEMO、楽天mobileには対応していません。</span>
                 </div>
             
             <div class="end">

@@ -170,6 +170,9 @@
             
 
             <div class="wrapper">
+                <div class="attention1">
+                    <span>最終更新日:2022/08/01</span>
+                </div>
                     
                     @for($i=1; $getMem >= $i; $i++)
                         <h1>{{$i}}台目</h1>
@@ -219,7 +222,7 @@
                     <div class="attention">
                         <p><span>※</span>今回の比較結果は、目安です。</p>
                         <p><span>※</span>結果をもとに携帯販売員にご相談ください。</p>
-                        <a href="https://www.softbank.jp/mobile/price_plan/products/#/" target="_blank">ソフトバンク公式シミュレーション</a>
+                        <a href="https://www.softbank.jp/mobile/simulator/#/" target="_blank">ソフトバンク公式シミュレーション</a>
                     </div>
                 </div>
                 

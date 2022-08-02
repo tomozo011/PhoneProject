@@ -415,6 +415,10 @@ margin: 0 auto;
   background-color: #CCFFCC;
 }
 
+.attention1{
+  text-align: left;
+}
+
 .carrier {
   display: flex;
   justify-content: space-between;

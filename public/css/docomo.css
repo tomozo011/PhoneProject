@@ -438,6 +438,10 @@ header h2 {
   margin-right: 0rem;
 }
 
+.attention1{
+  text-align: left;
+}
+
 .wrapper {
     background-color: white;
     text-align: center;

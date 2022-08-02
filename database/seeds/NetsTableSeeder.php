@@ -32,14 +32,14 @@ class NetsTableSeeder extends Seeder
 
 
 // UQ
-            ['id' => 14, 'carrier'=>'UQ', 'name' => 'au光/eo光','price' => 1100,'plan_id' =>401],
-            ['id' => 15, 'carrier'=>'UQ', 'name' => 'au光/eo光','price' => 1100,'plan_id' =>402],
-            ['id' => 16, 'carrier'=>'UQ', 'name' => 'au光/eo光','price' => 1100,'plan_id' =>403],
+            ['id' => 14, 'carrier'=>'UQ', 'name' => 'au光/eo光','price' => 638,'plan_id' =>401],
+            ['id' => 15, 'carrier'=>'UQ', 'name' => 'au光/eo光','price' => 638,'plan_id' =>402],
+            ['id' => 16, 'carrier'=>'UQ', 'name' => 'au光/eo光','price' => 858,'plan_id' =>403],
 
 // YM
-            ['id' => 17, 'carrier'=>'Y!mobile', 'name' => 'ソフトバンク光/ソフトバンクAir','price' => 1100,'plan_id' =>501],
-            ['id' => 18, 'carrier'=>'Y!mobile', 'name' => 'ソフトバンク光/ソフトバンクAir','price' => 1100,'plan_id' =>502],
-            ['id' => 19, 'carrier'=>'Y!mobile', 'name' => 'ソフトバンク光/ソフトバンクAir','price' => 1100,'plan_id' =>503],
+            ['id' => 17, 'carrier'=>'Y!mobile', 'name' => 'ソフトバンク光/ソフトバンクAir','price' => 1188,'plan_id' =>501],
+            ['id' => 18, 'carrier'=>'Y!mobile', 'name' => 'ソフトバンク光/ソフトバンクAir','price' => 1188,'plan_id' =>502],
+            ['id' => 19, 'carrier'=>'Y!mobile', 'name' => 'ソフトバンク光/ソフトバンクAir','price' => 1188,'plan_id' =>503],
 
         ]);
     }

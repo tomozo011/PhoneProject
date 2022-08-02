@@ -171,6 +171,10 @@
                 
 
             <div class="wrapper">
+                <div class="attention1">
+                    <span>最終更新日:2022/08/01</span>
+                </div>
+                
                 <div class="box">
                     @for($i=1; $getMem >= $i; $i++)
                         <h1>{{$i}}台目</h1>

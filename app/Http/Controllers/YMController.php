@@ -79,14 +79,17 @@ class YMController extends Controller
             }    
 
             // 家族割
-            $Families_2 = Family::where('id',1)->first();
-            $Families_3 = Family::where('id',2)->first();
+            $Families_3 = Family::where('id',3)->first();
+            $Families_4 = Family::where('id',4)->first();
+            $Families_5 = Family::where('id',5)->first();
             if($request->net == 'ソフトバンク光/ソフトバンクAir') {
                 $Member_price = 0;
-            }elseif($getMem == $Families_2->member){
-                $Member_price = $Families_2->price;
-            }elseif($getMem >= $Families_3->member) {
+            }elseif($getMem == $Families_3->member){
                 $Member_price = $Families_3->price;
+            }elseif($getMem == $Families_4->member){
+                $Member_price = $Families_4->price;
+            }elseif($getMem == $Families_5->member){
+                $Member_price = $Families_5->price;
             }else{
                 $Member_price = 0;
             }

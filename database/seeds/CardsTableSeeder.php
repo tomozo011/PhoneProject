@@ -13,7 +13,7 @@ class CardsTableSeeder extends Seeder
     {
         DB::table('cards')->insert([
             ['id' => 1, 'carrier' => 'ドコモ', 'name'=>'dカード', 'price' => 187, 'plan_id'=>101],
-            ['id' => 2, 'carrier' => 'au', 'name'=>'auPayカード', 'price' => 187, 'plan_id'=>201]
+            ['id' => 2, 'carrier' => 'au', 'name'=>'auPayカード', 'price' => 110, 'plan_id'=>201]
         ]);
     }
 }

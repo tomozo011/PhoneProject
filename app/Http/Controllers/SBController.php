@@ -69,12 +69,12 @@ class SBController extends Controller
                 }
                 
             // 家族割
-            $Families_2 = Family::where('id',1)->first();
-            $Families_3 = Family::where('id',2)->first();
-            if($getMem == $Families_2->member){
-                $Member_price = $Families_2->price;
-            }elseif($getMem >= $Families_3->member) {
-                $Member_price = $Families_3->price;
+            $Families_6 = Family::where('id',6)->first();
+            $Families_7 = Family::where('id',7)->first();
+            if($getMem == $Families_6->member){
+                $Member_price = $Families_6->price;
+            }elseif($getMem >= $Families_7->member) {
+                $Member_price = $Families_7->price;
             }else{
                 $Member_price = 0;
             }
@@ -91,6 +91,7 @@ class SBController extends Controller
                 $Nets_price[] = 0;
             }
 
+
             // 学割
             // $Students = Student::where('carrier', 'ソフトバンク')->first();
             // if($Students->min_age <= $request->{$ages[$count]} && $request->{$ages[$count]} <= $Students->max_age && $Plans[$count]->plan_id == $Students->plan_id){
@@ -102,7 +103,7 @@ class SBController extends Controller
             // 合計
             foreach($Plans as $Plan){
                 if(isset($Plan)){
-                    $Total1 = $Plan->price + $Tells_price[$count] - $Member_price - $Nets_price[$count] ;
+                    $Total1 = $Plan->price + $Tells_price[$count] - $Nets_price[$count] ;
                 }
             }
 
